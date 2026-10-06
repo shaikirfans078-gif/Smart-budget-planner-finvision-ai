@@ -1,0 +1,8 @@
+# Usage: place your private .env next to this file, then:  docker compose up -d --build
+services:
+  finvision:
+    build: .
+    ports:
+      - "3000:3000"
+    env_file: .env
+    restart: unless-stopped

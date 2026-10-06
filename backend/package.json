@@ -1,0 +1,28 @@
+{
+  "name": "finvision-ai-backend",
+  "version": "2.3.4",
+  "description": "FinVision AI Analytics Platform - Backend API (JWT auth, email OTP verification, OTP password reset, Neon PostgreSQL persistence (file fallback), multi-account net worth, recurring transactions, PDF/Excel reports, admin console)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "migrate:file-to-pg": "node scripts/migrate-file-to-pg.js",
+    "db:check": "node scripts/db-check.js",
+    "env:check": "node scripts/env-check.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "exceljs": "^4.4.0",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^6.9.14",
+    "pdfkit": "^0.15.0",
+    "pg": "^8.12.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
